@@ -20,7 +20,7 @@ function ProgettiShowcase() {
 
     return (
         <section className="text-gray-600 body-font">
-            <div className="flex flex-wrap justify-around sm:-m-4 -mx-4 -mb-10 -mt-4 space-y-6">
+            <div className="flex flex-wrap justify-around space-y-6">
                 {projects.map((item, idx) => {
                     return (
                         <ProjectCard title={item.title} description={item.description} link={item.link}

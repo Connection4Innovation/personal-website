@@ -10,13 +10,13 @@ function LanguageSelector() {
         case 'it':
             button =
                 <button type="button" onClick={() => i18n.changeLanguage('en')} className="px-2">
-                    <img src="https://www.countryflags.io/gb/flat/24.png" alt={t('footer:ukFlag')}/>
+                    <img src="https://www.countryflags.io/gb/flat/24.png" width={24} alt={t('footer:ukFlag')}/>
                 </button>
             break;
         default:
             button =
                 <button type="button" onClick={() => i18n.changeLanguage('it')} className="px-2">
-                    <img src="https://www.countryflags.io/it/flat/24.png" alt={t('footer:italyFlag')}/>
+                    <img src="https://www.countryflags.io/it/flat/24.png" width={24} alt={t('footer:italyFlag')}/>
                 </button>
     }
 

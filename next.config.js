@@ -7,8 +7,5 @@ module.exports = {
             use: ['@svgr/webpack'],
         });
         return config;
-    },
-    images: {
-        loader: 'imgix'
     }
 }

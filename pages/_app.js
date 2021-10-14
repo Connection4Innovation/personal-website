@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import '../src/utility/firebase'
+import '../src/utility/firebaseInit'
 import * as fbq from '../src/utility/fpixel'
 import {useRouter} from "next/router";
 import {useEffect} from "react";

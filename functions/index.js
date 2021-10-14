@@ -1,23 +1,9 @@
 const functions = require('firebase-functions');
-const {default: next} = require('next');
-
-const isDev = process.env.NODE_ENV !== 'production';
 const Mailchimp = require('mailchimp-api-v3')
 
 const mailchimp = new Mailchimp('e1971e822071a47289d940e8685e3ab0-us1');
 
-const server = next({
-    dev: isDev,
-    //location of .next generated after running -> yarn build
-    conf: {distDir: '../.next'},
-});
-
-const nextjsHandle = server.getRequestHandler();
-exports.nextServer = functions.https.onRequest((req, res) => {
-    return server.prepare().then(() => nextjsHandle(req, res));
-});
-
-exports.addSubscriber = functions.firestore
+exports.addSubscriber = functions.region('europe-west3').firestore
     .document('newsletter/{userId}')
     .onCreate((snap, context) => {
 

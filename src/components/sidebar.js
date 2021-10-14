@@ -1,6 +1,9 @@
 import * as React from "react"
 import {useTranslation} from "react-i18next";
 import Link from 'next/link'
+import FacebookIcon from "../assets/js/FacebookIcon";
+import InstagramIcon from "../assets/js/InstagramIcon";
+import LinkedInIcon from "../assets/js/LinkedInIcon";
 
 function Sidebar(props) {
 
@@ -31,7 +34,7 @@ function Sidebar(props) {
                         </div>
                         <div className="flex-1 h-0 pt-5 pb-4 overflow-y-auto text-left leading-8">
                             <p className="px-5 flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 ml-3 text-xl">
-                                Connection4Innovation
+                                Connection4Innovation APS
                             </p>
                             <Link href={"/"}>
                                 <a className="px-10 hover:text-gray-900"
@@ -49,9 +52,16 @@ function Sidebar(props) {
                                 <p className="px-10 hover:text-gray-900"
                                    onClick={() => props.changeVisibility(false)}>{t('header:contattaci')}</p>
                             </Link>
+                            <div
+                                className="container w-1/2 mx-auto pt-10 flex justify-around md:w-auto sm:justify-end">
+                                <FacebookIcon link={"https://www.facebook.com/connection4innovation"}/>
+                                <span className="lg:w-4 md:w-2"/>
+                                <InstagramIcon link={"https://www.instagram.com/connection4innovation"}/>
+                                <span className="lg:w-4 md:w-1"/>
+                                <LinkedInIcon link={"https://www.linkedin.com/company/71706828"}/>
+                            </div>
                         </div>
                     </div>
-                    <div className="flex-shrink-0 w-14"/>
                 </div>
             </div>
         )

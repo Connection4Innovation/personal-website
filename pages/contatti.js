@@ -14,9 +14,11 @@ function Contacts() {
          <React.Suspense fallback={<div>Loading...</div>} maxDuration={5000}>**/
         <>
             <SEO title={"Contattaci"} description={"Contattaci per organizzare progetti insieme"}/>
-            <Header/>
-            <WrapperContacts/>
-            <Footer/>
+            <div className={"min-h-screen flex flex-col"}>
+                <Header/>
+                <WrapperContacts/>
+                <Footer/>
+            </div>
         </>
         /**</React.Suspense>**/
     )

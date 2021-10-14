@@ -14,9 +14,11 @@ function LaNostraSquadra() {
          <React.Suspense fallback={<div>Loading...</div>} maxDuration={5000}>**/
         <>
             <SEO title={"La Nostra Squadra"} description={"Conosci il nostro team"}/>
-            <Header/>
-            <WrapperTeam/>
-            <Footer/>
+            <div className={"min-h-screen flex flex-col"}>
+                <Header/>
+                <WrapperTeam/>
+                <Footer/>
+            </div>
         </>
         /**</React.Suspense>**/
     )

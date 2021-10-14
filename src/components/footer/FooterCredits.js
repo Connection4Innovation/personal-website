@@ -13,20 +13,29 @@ function FooterCredits() {
     return (
         <div className="bg-gray-100">
             <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                <p className="text-gray-500 text-sm text-center sm:text-left">© {getYear()} Connection4Innovation APS
-                    <span className="hidden md:block"> — </span><div className="md:hidden"><br/></div>
-                    created by <a href="http://anrighi.dx.am" className="text-gray-600 ml-1" target="_blank"
-                                  rel="noopener noreferrer">andrea righi</a>
+                <p className="text-gray-500 text-sm text-center sm:text-left">
+                    © {getYear()} Connection4Innovation APS <span className="h-1 block md:hidden"/>
+                    created by
+                    <a
+                        href="http://anrighi.dx.am"
+                        className="text-gray-600 ml-1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        andrea righi
+                    </a>
                 </p>
                 <div
-                    className="container md:py-0 pt-3 flex items-center justify-center sm:ml-auto sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">
+                    className="container w-1/2 mx-auto pt-3 flex justify-around md:w-auto lg:w-1/6 md:py-0 sm:justify-end">
                     <FacebookIcon link={"https://www.facebook.com/connection4innovation"}/>
-                    <span className="lg:w-4 md:w-1"/>
+                    <span className="lg:w-4 md:w-2"/>
                     <InstagramIcon link={"https://www.instagram.com/connection4innovation"}/>
                     <span className="lg:w-4 md:w-1"/>
                     <LinkedInIcon link={"https://www.linkedin.com/company/71706828"}/>
-                    <span className="lg:w-4 md:w-1"/>
-                    <span className="hidden md:block">•</span><br className="md:hidden"/><LanguageSelector/>
+                </div>
+                <div
+                    className="container md:py-0 pt-3 flex items-center justify-center sm:ml-auto sm:w-auto w-full text-center text-gray-500 text-sm">
+                    <LanguageSelector/>
                     <a href="https://www.iubenda.com/privacy-policy/11813572"
                        target="_blank"
                        rel="noopener noreferrer"

@@ -1,6 +1,6 @@
 {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
+  "name": "c4i-website-functions",
+  "description": "Cloud Functions for Firebase - C4I Website",
   "scripts": {
     "serve": "firebase emulators:start --only functions",
     "shell": "firebase functions:shell",
@@ -13,35 +13,8 @@
   },
   "main": "index.js",
   "dependencies": {
-    "cross-env": "^7.0.3",
     "firebase-admin": "^9.8.0",
     "firebase-functions": "^3.14.1",
-    "mailchimp-api-v3": "^1.15.0",
-    "@firebase/analytics": "^0.7.1",
-    "@firebase/app": "^0.7.3",
-    "@firebase/app-check": "^0.4.2",
-    "@firebase/firestore": "^3.1.0",
-    "@firebase/functions": "^0.7.2",
-    "@firebase/performance": "^0.5.1",
-    "@svgr/webpack": "^5.5.0",
-    "autoprefixer": "^10.3.7",
-    "i18next": "^21.2.6",
-    "i18next-browser-languagedetector": "^6.1.2",
-    "i18next-http-backend": "^1.3.1",
-    "next": "11.1.2",
-    "postcss": "^8.3.9",
-    "public-ip": "^4.0.4",
-    "react": "17.0.2",
-    "react-cookie-consent": "^6.4.1",
-    "react-dom": "17.0.2",
-    "react-helmet": "^6.1.0",
-    "react-hotjar": "^3.0.1",
-    "react-i18next": "^11.12.0",
-    "react-vertical-timeline-component": "^3.3.3",
-    "tailwindcss": "^2.2.16"
-  },
-  "devDependencies": {
-    "firebase-functions-test": "^0.2.0"
-  },
-  "private": true
+    "mailchimp-api-v3": "^1.15.0"
+  }
 }
