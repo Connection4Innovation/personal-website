@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+    <url>
+        <loc>https://connection4innovation.it/</loc>
+        <lastmod>2021-10-17T19:02:43+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://connection4innovation.it/chi-siamo</loc>
+        <lastmod>2021-10-17T19:02:43+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://connection4innovation.it/la-nostra-squadra</loc>
+        <lastmod>2021-10-17T19:02:43+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://connection4innovation.it/progetti</loc>
+        <lastmod>2021-10-17T19:02:43+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://connection4innovation.it/progetti/open-the-data</loc>
+        <lastmod>2021-10-17T19:02:43+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://connection4innovation.it/contatti</loc>
+        <lastmod>2021-10-17T19:02:43+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+</urlset>
