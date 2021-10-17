@@ -13,7 +13,7 @@ function Index() {
         <>
             <SEO/>
             <div className={"min-h-screen flex flex-col"}>
-                <Header/>
+                <Header banner={true}/>
                 <Hero/>
                 <Footer/>
             </div>

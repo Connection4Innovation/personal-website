@@ -12,7 +12,7 @@ const NotFoundPage = () => {
          <React.Suspense fallback={<div>Loading...</div>} maxDuration={5000}>**/
         <>
             <SEO title={"Errore 404"} description={"Pagina non trovata"}/>
-            <Header/>
+            <Header banner={true}/>
             <PageNotFound/>
             <Footer/>
         </>

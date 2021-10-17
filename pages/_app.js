@@ -4,15 +4,12 @@ import * as fbq from '../src/utility/fpixel'
 import {useRouter} from "next/router";
 import {useEffect} from "react";
 import Script from 'next/script'
-import {hotjar} from "react-hotjar";
 
 function MyApp({Component, pageProps}) {
 
     const router = useRouter()
 
     useEffect(() => {
-
-        hotjar.initialize(2625870, 6);
         fbq.pageview()
 
         const handleRouteChange = () => {
@@ -38,13 +35,36 @@ function MyApp({Component, pageProps}) {
                             t.src=v;s=b.getElementsByTagName(e)[0];
                             s.parentNode.insertBefore(t,s)}(window, document,'script',
                             'https://connect.facebook.net/en_US/fbevents.js');
-                            fbq('init', ${fbq.FB_PIXEL_ID});
-                            
-                            (function(c,l,a,r,i,t,y){
+                            fbq('init', ${fbq.FB_PIXEL_ID});`
+                }}
+            />
+            <Script
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                    __html: `(function(c,l,a,r,i,t,y){
                                 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
                                 t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
                                 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-                            })(window, document, "clarity", "script", "8vgo9kbjmx");`,
+                            })(window, document, "clarity", "script", "8vgo9kbjmx");`
+                }}
+            />
+            <Script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: `{
+                        "@context": "https://schema.org",
+                        "@type": "Organization",
+                        "name": "Connection4Innovation APS",
+                        "url": "https://connection4innovation.it",
+                        "logo": "https://connection4innovation.it/favicon.ico",
+                        "sameAs": [
+                        "https://www.facebook.com/connection4innovation/",
+                        "https://www.instagram.com/connection4innovation/",
+                        "https://www.linkedin.com/company/71706828/",
+                        "https://github.com/Connection4Innovation",
+                        "https://www.youtube.com/channel/UCys7AwQI3LC8ZG_fAxBXKCA"
+                        ]
+                    }`
                 }}
             />
             <Component {...pageProps} />

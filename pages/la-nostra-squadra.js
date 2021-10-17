@@ -15,7 +15,7 @@ function LaNostraSquadra() {
         <>
             <SEO title={"La Nostra Squadra"} description={"Conosci il nostro team"}/>
             <div className={"min-h-screen flex flex-col"}>
-                <Header/>
+                <Header banner={true}/>
                 <WrapperTeam/>
                 <Footer/>
             </div>

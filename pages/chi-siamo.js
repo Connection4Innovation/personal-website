@@ -16,7 +16,7 @@ function ChiSiamo() {
         <>
             <SEO title={"Chi siamo"} description={"Scopri la storia dell'associazione Connection4Innovation APS"}/>
             <div className={"min-h-screen flex flex-col"}>
-                <Header/>
+                <Header banner={true}/>
                 <ChiSiamoWrapper/>
                 <span className="h-10"/>
                 <Timeline/>

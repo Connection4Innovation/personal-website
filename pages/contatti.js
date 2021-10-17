@@ -15,7 +15,7 @@ function Contacts() {
         <>
             <SEO title={"Contattaci"} description={"Contattaci per organizzare progetti insieme"}/>
             <div className={"min-h-screen flex flex-col"}>
-                <Header/>
+                <Header banner={true}/>
                 <WrapperContacts/>
                 <Footer/>
             </div>

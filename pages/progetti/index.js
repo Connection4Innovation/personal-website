@@ -14,7 +14,7 @@ function Index() {
         <>
             <SEO title={"Progetti"} description={"Scopri cosa fa l'associazione Connection4Innovation APS"}/>
             <div className={"min-h-screen flex flex-col"}>
-                <Header/>
+                <Header banner={true}/>
                 <ProgettiWrapper/>
                 <ProgettiShowcase/>
                 <span className="h-10"/>
