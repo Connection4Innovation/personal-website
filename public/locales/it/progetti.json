@@ -8,5 +8,7 @@
   "otd_description": "Il progetto consiste di 4 videolezioni che accompagneranno l’utente nell'apprendimento del linguaggio di programmazione Python e nella realizzazione di manipolazione e visualizzazione grafiche di set di dati disponibili online. \n Alla fine di ogni video, ci sarà un breve questionario da compilare, per monitorare lo stato di apprendimento.\n\nI partecipanti elaboreranno un dataset tramite Jupiter Notebook e alcune librerie di Python (Pandas, Matplotlib, Seaborn), per realizzare delle data visualization partendo da set di dati disponibili online, nei siti governativi (World Bank Open Data, OECD Data). \n",
   "partners": "Partners",
   "iscrizioni_aperte": "Sono aperte le iscrizioni al progetto Open The Data!",
-  "iscriviti_ora": "Iscriviti ora"
+  "iscriviti_ora": "Iscriviti ora",
+  "siamo_in_finale": "Il progetto Open The Data è in finale al Meet and Code Award",
+  "guarda_la_news": "Guarda la news!"
 }
