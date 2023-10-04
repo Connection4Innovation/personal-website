@@ -10,17 +10,14 @@ import SEO from "../src/utility/SEO";
 function Contacts() {
 
     return (
-        /**
-         <React.Suspense fallback={<div>Loading...</div>} maxDuration={5000}>**/
         <>
-            <SEO title={"Contattaci"} description={"Contattaci per organizzare progetti insieme"}/>
+            <SEO title={"Contattaci"} description={"Contattaci per organizzare progetti insieme"} />
             <div className={"min-h-screen flex flex-col"}>
-                <Header banner={true}/>
-                <WrapperContacts/>
-                <Footer/>
+                <Header banner={true} />
+                <WrapperContacts />
+                <Footer />
             </div>
         </>
-        /**</React.Suspense>**/
     )
 }
 

@@ -10,17 +10,14 @@ import SEO from "../src/utility/SEO";
 function LaNostraSquadra() {
 
     return (
-        /**
-         <React.Suspense fallback={<div>Loading...</div>} maxDuration={5000}>**/
         <>
-            <SEO title={"La Nostra Squadra"} description={"Conosci il nostro team"}/>
+            <SEO title={"La Nostra Squadra"} description={"Conosci il nostro team"} />
             <div className={"min-h-screen flex flex-col"}>
-                <Header banner={true}/>
-                <WrapperTeam/>
-                <Footer/>
+                <Header banner={true} />
+                <WrapperTeam />
+                <Footer />
             </div>
         </>
-        /**</React.Suspense>**/
     )
 }
 

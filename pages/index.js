@@ -8,17 +8,14 @@ import SEO from "../src/utility/SEO";
 
 function Index() {
     return (
-        /**
-         <React.Suspense fallback={<div>Loading...</div>} maxDuration={5000}>**/
         <>
-            <SEO/>
+            <SEO />
             <div className={"min-h-screen flex flex-col"}>
-                <Header banner={true}/>
-                <Hero/>
-                <Footer/>
+                <Header banner={true} />
+                <Hero />
+                <Footer />
             </div>
         </>
-        /**</React.Suspense>**/
     )
 }
 

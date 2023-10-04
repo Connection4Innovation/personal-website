@@ -11,19 +11,16 @@ import Timeline from "../src/components/chi-siamo/Timeline";
 
 function ChiSiamo() {
     return (
-        /**
-         <React.Suspense fallback={<div>Loading...</div>} maxDuration={5000}>**/
         <>
-            <SEO title={"Chi siamo"} description={"Scopri la storia dell'associazione Connection4Innovation APS"}/>
+            <SEO title={"Chi siamo"} description={"Scopri la storia dell'associazione Connection4Innovation APS"} />
             <div className={"min-h-screen flex flex-col"}>
-                <Header banner={true}/>
-                <ChiSiamoWrapper/>
-                <span className="h-10"/>
-                <Timeline/>
-                <Footer/>
+                <Header banner={true} />
+                <ChiSiamoWrapper />
+                <span className="h-10" />
+                <Timeline />
+                <Footer />
             </div>
         </>
-        /**</React.Suspense>**/
     );
 }
 

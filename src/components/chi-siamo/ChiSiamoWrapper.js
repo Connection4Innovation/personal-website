@@ -1,10 +1,10 @@
 import * as React from "react";
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 import Link from 'next/link';
 
 function ChiSiamoWrapper() {
 
-    const {t} = useTranslation();
+    const { t } = useTranslation();
 
     return (
         <section className="text-gray-600 body-font pt-12">
