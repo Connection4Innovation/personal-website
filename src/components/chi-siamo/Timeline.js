@@ -1,12 +1,12 @@
 import * as React from "react"
 
-import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component';
-import {useTranslation} from "react-i18next";
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import { useTranslation } from "react-i18next";
 import Link from "next/link"
 
 function Timeline() {
 
-    const {t} = useTranslation();
+    const { t } = useTranslation();
 
     const timelineEvents = [{
         title: t('timeline:1_title'),
@@ -18,13 +18,13 @@ function Timeline() {
         subtitle: t('timeline:2_subtitle'),
         description: t('timeline:2_description'),
         date: t('timeline:2_date'),
-        contentStyle: {background: '#7F96EA', color: 'black'}
+        contentStyle: { background: '#7F96EA', color: 'black' }
     }, {
         title: t('timeline:3_title'),
         subtitle: t('timeline:3_subtitle'),
         description: t('timeline:3_description'),
         date: t('timeline:3_date'),
-        contentStyle: {background: '#7F96EA', color: 'black',}
+        contentStyle: { background: '#7F96EA', color: 'black', }
     }, {
         title: t('timeline:4_title'),
         subtitle: t('timeline:4_subtitle'),
@@ -41,6 +41,22 @@ function Timeline() {
                 text: t('timeline:5_button1')
             }
         ]
+    }, {
+        title: t('timeline:6_title'),
+        subtitle: t('timeline:6_subtitle'),
+        date: t('timeline:6_date'),
+        description: t('timeline:6_description'),
+        contentStyle: { background: '#7F96EA', color: 'black', }
+    }, {
+        title: t('timeline:7_title'),
+        subtitle: t('timeline:7_subtitle'),
+        date: t('timeline:7_date'),
+        description: t('timeline:7_description'),
+    }, {
+        title: t('timeline:8_title'),
+        subtitle: t('timeline:8_subtitle'),
+        date: t('timeline:8_date'),
+        description: t('timeline:8_description'),
     }];
 
     return (
@@ -52,8 +68,8 @@ function Timeline() {
                 return (
                     <VerticalTimelineElement
                         key={idx}
-                        contentStyle={item.contentStyle ?? {border: '2px solid #7F96EA'}}
-                        contentArrowStyle={{borderRight: '7px solid #7F96EA'}}
+                        contentStyle={item.contentStyle ?? { border: '2px solid #7F96EA' }}
+                        contentArrowStyle={{ borderRight: '7px solid #7F96EA' }}
                         date={item.date}
                         iconStyle={{
                             background: `rgba(127, 150, 134, ${alpha})`,

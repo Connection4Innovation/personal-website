@@ -14,8 +14,6 @@ import Script from "next/script";
 function OpenTheData() {
 
     return (
-        /**
-         <React.Suspense fallback={<div>Loading...</div>} maxDuration={5000}>**/
         <>
             <Script
                 type="application/ld+json"
@@ -35,20 +33,19 @@ function OpenTheData() {
                         }`
                 }}
             />
-            <SEO title={"Open The Data"} description={"Mini-corso online riguardante l'analisi dati con Python"}/>
+            <SEO title={"Open The Data"} description={"Mini-corso online riguardante l'analisi dati con Python"} />
             <div className={"min-h-screen flex flex-col"}>
-                <Header banner={false}/>
+                <Header banner={false} />
                 <SingleProject image={openthedata} title={'otd_title'}
-                               description={'otd_description'} partners={[{
-                    name: "MeetAndCode",
-                    link: "https://meet-and-code.org/",
-                    image: meetandcode,
-                    iframe: "https://docs.google.com/forms/d/e/1FAIpQLSco1sMT1rMlwExDmVbmiyqe6_JzmT_2mxZ_ZbBfkCubPkatNw/viewform?embedded=true"
-                }]}/>
-                <Footer/>
+                    description={'otd_description'} partners={[{
+                        name: "MeetAndCode",
+                        link: "https://meet-and-code.org/",
+                        image: meetandcode,
+                        iframe: "https://docs.google.com/forms/d/e/1FAIpQLSco1sMT1rMlwExDmVbmiyqe6_JzmT_2mxZ_ZbBfkCubPkatNw/viewform?embedded=true"
+                    }]} />
+                <Footer />
             </div>
         </>
-        /**</React.Suspense>**/
     );
 }
 

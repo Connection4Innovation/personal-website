@@ -1,11 +1,10 @@
 import * as React from "react";
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 import Image from 'next/image'
-import Link from 'next/link'
 
 function SingleProject(props) {
 
-    const {t} = useTranslation();
+    const { t } = useTranslation();
 
     return (
         <section className="text-gray-600 body-font">
@@ -24,11 +23,6 @@ function SingleProject(props) {
                     <p className="leading-relaxed">{t(`progetti:${props.description}`)}</p>
                 </div>
             </div>
-            <div className="flex justify-around">
-                <iframe
-                    src={"https://docs.google.com/forms/d/e/1FAIpQLSco1sMT1rMlwExDmVbmiyqe6_JzmT_2mxZ_ZbBfkCubPkatNw/viewform?embedded=true"}
-                    width="640" height="1500" frameBorder="0" marginHeight="0" marginWidth="0"/>
-            </div>
             <div className="text-center my-20">
                 <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">{t('progetti:partners')}</h1>
             </div>
@@ -43,7 +37,7 @@ function SingleProject(props) {
                                         width={4}
                                         height={2}
                                         alt={part.name}
-                                        src={part.image.src}/>
+                                        src={part.image.src} />
                                 </div>
                             </a>
                         </div>
