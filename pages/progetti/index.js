@@ -9,19 +9,16 @@ import "../../src/utility/i18n.js"
 function Index() {
 
     return (
-        /**
-         <React.Suspense fallback={<div>Loading...</div>} maxDuration={5000}>**/
         <>
-            <SEO title={"Progetti"} description={"Scopri cosa fa l'associazione Connection4Innovation APS"}/>
+            <SEO title={"Progetti"} description={"Scopri cosa fa l'associazione Connection4Innovation APS"} />
             <div className={"min-h-screen flex flex-col"}>
-                <Header banner={true}/>
-                <ProgettiWrapper/>
-                <ProgettiShowcase/>
-                <span className="h-10"/>
-                <Footer/>
+                <Header banner={true} />
+                <ProgettiWrapper />
+                <ProgettiShowcase />
+                <span className="h-10" />
+                <Footer />
             </div>
         </>
-        /**</React.Suspense>**/
     )
 }
 
