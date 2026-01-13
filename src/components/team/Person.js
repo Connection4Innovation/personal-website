@@ -13,10 +13,9 @@ function Person(props, key) {
                     <Image
                         alt="team"
                         className="rounded-lg object-cover object-center"
-                        layout="responsive"
-                        width={1}
-                        height={1}
-                        src={props.image.src}
+                        width={192}
+                        height={192}
+                        src={props.image}
                     />
                 </div>
                 <div className="grow sm:pl-8">

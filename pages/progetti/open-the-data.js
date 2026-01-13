@@ -4,11 +4,7 @@ import SEO from "../../src/utility/SEO";
 import Header from "../../src/components/header";
 import Footer from "../../src/components/footer";
 
-import "../../src/utility/i18n.js"
 import SingleProject from "../../src/components/progetti/SingleProject";
-
-import openthedata from "../../public/assets/img/openthedata.png"
-import meetandcode from "../../public/assets/img/RGB_Meet_and_Code_Logo.jpg"
 import Script from "next/script";
 
 function OpenTheData() {
@@ -36,11 +32,11 @@ function OpenTheData() {
             <SEO title={"Open The Data"} description={"Mini-corso online riguardante l'analisi dati con Python"} />
             <div className={"min-h-screen flex flex-col"}>
                 <Header banner={false} />
-                <SingleProject image={openthedata} title={'otd_title'}
-                    description={'otd_description'} partners={[{
+                <SingleProject image={"/assets/img/openthedata.png"} title={'Open The Data'}
+                    description={"Il progetto consiste di 4 videolezioni che accompagneranno l'utente nell'apprendimento del linguaggio di programmazione Python e nella realizzazione di manipolazione e visualizzazione grafiche di set di dati disponibili online. \n Alla fine di ogni video, ci sarà un breve questionario da compilare, per monitorare lo stato di apprendimento.\n\nI partecipanti elaboreranno un dataset tramite Jupiter Notebook e alcune librerie di Python (Pandas, Matplotlib, Seaborn), per realizzare delle data visualization partendo da set di dati disponibili online, nei siti governativi (World Bank Open Data, OECD Data). \n Per maggiori informazioni scrivi alla nostra mail."} partners={[{
                         name: "MeetAndCode",
                         link: "https://meet-and-code.org/",
-                        image: meetandcode,
+                        image: "/assets/img/RGB_Meet_and_Code_Logo.jpg",
                         iframe: "https://docs.google.com/forms/d/e/1FAIpQLSco1sMT1rMlwExDmVbmiyqe6_JzmT_2mxZ_ZbBfkCubPkatNw/viewform?embedded=true"
                     }]} />
                 <Footer />

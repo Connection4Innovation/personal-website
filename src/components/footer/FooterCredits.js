@@ -1,5 +1,4 @@
 import * as React from "react"
-import LanguageSelector from "./LanguageSelector";
 import LinkedInIcon from "../../assets/js/LinkedInIcon";
 import InstagramIcon from "../../assets/js/InstagramIcon";
 import FacebookIcon from "../../assets/js/FacebookIcon";
@@ -35,12 +34,11 @@ function FooterCredits() {
                 </div>
                 <div
                     className="container md:py-0 pt-3 flex items-center justify-center sm:ml-auto sm:w-auto w-full text-center text-gray-500 text-sm">
-                    <LanguageSelector />
                     <a href="https://www.iubenda.com/privacy-policy/11813572"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="">
-                        • Privacy policy
+                        Privacy policy
                     </a>
                 </div>
             </div>

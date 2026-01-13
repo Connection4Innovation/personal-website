@@ -5,8 +5,6 @@ import SEO from "../src/utility/SEO";
 import Header from "../src/components/header";
 import Footer from "../src/components/footer";
 import ChiSiamoWrapper from "../src/components/chi-siamo/ChiSiamoWrapper";
-
-import "../src/utility/i18n.js"
 import Timeline from "../src/components/chi-siamo/Timeline";
 
 function ChiSiamo() {

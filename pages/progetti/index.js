@@ -4,7 +4,6 @@ import Header from "../../src/components/header";
 import Footer from "../../src/components/footer";
 import ProgettiWrapper from "../../src/components/progetti/ProgettiWrapper";
 import ProgettiShowcase from "../../src/components/progetti/ProgettiShowcase";
-import "../../src/utility/i18n.js"
 
 function Index() {
 

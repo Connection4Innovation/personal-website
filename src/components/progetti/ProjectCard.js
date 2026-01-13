@@ -7,14 +7,14 @@ function ProjectCard(props) {
     return (
         <Link href={props.link}>
             <div className="p-4 md:w-1/3 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <Image
-                    className="lg:h-48 md:h-36 w-full object-cover object-center"
-                    src={props.image.src}
-                    width={4}
-                    height={2}
-                    layout="responsive"
-                    alt="blog"
-                />
+                <div className="lg:h-48 md:h-36 w-full relative">
+                    <Image
+                        className="object-cover object-center"
+                        src={props.image}
+                        fill
+                        alt="blog"
+                    />
+                </div>
                 <div className="p-6">
                     <h1 className="title-font text-lg font-medium text-gray-900 mb-3">{props.title}</h1>
                     <p className="leading-relaxed mb-3">{props.description}</p>

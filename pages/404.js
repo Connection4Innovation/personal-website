@@ -4,8 +4,6 @@ import Header from "../src/components/header";
 import Footer from "../src/components/footer";
 import PageNotFound from "../src/components/page-not-found";
 
-import '../src/utility/i18n'
-
 const NotFoundPage = () => {
     return (
         <>

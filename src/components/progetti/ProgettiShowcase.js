@@ -1,20 +1,15 @@
 import * as React from "react";
-import {useTranslation} from "react-i18next";
 import ProjectCard from "./ProjectCard";
-
-import openthedata from '../../../public/assets/img/openthedata.png'
 
 function ProgettiShowcase() {
 
-    const {t} = useTranslation();
-
     const projects = [
         {
-            title: t('progetti:1_title'),
-            description: t('progetti:1_description'),
-            linkDescription: t('progetti:1_link'),
+            title: "Open The Data",
+            description: "Mini-corso online riguardante analisi dati con Python.",
+            linkDescription: "Iscriviti",
             link: '/progetti/open-the-data',
-            image: openthedata
+            image: "/assets/img/openthedata.png"
         },
     ];
 

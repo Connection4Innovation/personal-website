@@ -3,8 +3,6 @@ import * as React from "react"
 import Header from "../src/components/header";
 import Footer from "../src/components/footer";
 import WrapperContacts from "../src/components/contacts/WrapperContacts";
-
-import "../src/utility/i18n.js"
 import SEO from "../src/utility/SEO";
 
 function Contacts() {

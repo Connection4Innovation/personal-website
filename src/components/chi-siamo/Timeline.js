@@ -1,62 +1,59 @@
 import * as React from "react"
 
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import { useTranslation } from "react-i18next";
 import Link from "next/link"
 
 function Timeline() {
 
-    const { t } = useTranslation();
-
     const timelineEvents = [{
-        title: t('timeline:1_title'),
-        subtitle: t('timeline:1_subtitle'),
-        description: t('timeline:1_description'),
-        date: t('timeline:1_date'),
+        title: "Partecipazione a Bando Fermenti",
+        subtitle: "Progetto - Italian Cracks",
+        description: "Come gruppo informale CO.MA.IN. abbiamo partecipato ad il bando istituzionale promosso dalla presidenza del consiglio dei ministri, classificandoci 103esimi su migliaia di progetti.",
+        date: "Marzo 2019",
     }, {
-        title: t('timeline:2_title'),
-        subtitle: t('timeline:2_subtitle'),
-        description: t('timeline:2_description'),
-        date: t('timeline:2_date'),
+        title: "Fondazione dell'associazione",
+        subtitle: "",
+        description: "Con l'iscrizione presso l'agenzia delle entrate di Pesaro, siamo stati riconosciuti formalmente come associazione.",
+        date: "Giugno 2020",
         contentStyle: { background: '#7F96EA', color: 'black' }
     }, {
-        title: t('timeline:3_title'),
-        subtitle: t('timeline:3_subtitle'),
-        description: t('timeline:3_description'),
-        date: t('timeline:3_date'),
+        title: "Ingresso nella rete AUSER",
+        subtitle: "",
+        description: "Per incrementare le nostre possibilità di connessione, ci siamo affiliati con AUSER, di cui diventiamo partner per creare progetti ancora più di impatto.",
+        date: "Giugno 2020",
         contentStyle: { background: '#7F96EA', color: 'black', }
     }, {
-        title: t('timeline:4_title'),
-        subtitle: t('timeline:4_subtitle'),
-        description: t('timeline:4_description'),
-        date: t('timeline:4_date'),
+        title: "Riconoscimento come Associazione di Promozione Sociale",
+        subtitle: "Iscrizione nel registro regionale",
+        description: "Il centro antiviolenza di Pesaro ha riconosciuto Connection4Innovation APS come una Associazione di Promozione Sociale, iscrivendola nel registro regionale dedicato.",
+        date: "Agosto 2021",
     }, {
-        title: t('timeline:5_title'),
-        subtitle: t('timeline:5_subtitle'),
-        date: t('timeline:5_date'),
-        description: t('timeline:5_description'),
+        title: "Progetto - Open The Data",
+        subtitle: "Parte del percorso Meet And Code 2021",
+        date: "Ottobre 2021",
+        description: "Il primo progetto portato alla realizzazione dall'associazione; si compone di un mini-corso online riguardo l'analisi di dati da bacnhe dati europee con Python.",
         buttons: [
             {
                 link: '/progetti/open-the-data',
-                text: t('timeline:5_button1')
+                text: "Iscriviti"
             }
         ]
     }, {
-        title: t('timeline:6_title'),
-        subtitle: t('timeline:6_subtitle'),
-        date: t('timeline:6_date'),
-        description: t('timeline:6_description'),
+        title: "Iscrizione nel Registro Unico Nazionale del Terzo Settore",
+        subtitle: "",
+        date: "Ottobre 2022",
+        description: "Il Ministero del Lavoro e delle Politiche Sociali ha riconosciuto Connection4Innovation APS come Associazione di Promozione Sociale, iscrivendola nel registro nazionale dedicato.",
         contentStyle: { background: '#7F96EA', color: 'black', }
     }, {
-        title: t('timeline:7_title'),
-        subtitle: t('timeline:7_subtitle'),
-        date: t('timeline:7_date'),
-        description: t('timeline:7_description'),
+        title: "Riconoscimento come Associazione Giovanile Regione Marche",
+        subtitle: "",
+        date: "Marzo 2023",
+        description: "La regione Marche ha riconosciuto Connection4Innovation APS come Associazione Giovanile, iscrivendola nel registro regionale dedicato.",
     }, {
-        title: t('timeline:8_title'),
-        subtitle: t('timeline:8_subtitle'),
-        date: t('timeline:8_date'),
-        description: t('timeline:8_description'),
+        title: "Progetto - Open The Data",
+        subtitle: "Parte del percorso Meet And Code 2023",
+        date: "Ottobre 2023",
+        description: "Meet and Code ha riconosciuto il progetto Open The Data come parte del percorso 2023, finanziandolo e permettendoci di portarlo avanti.",
     }];
 
     return (

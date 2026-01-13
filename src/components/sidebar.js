@@ -1,13 +1,10 @@
 import * as React from "react"
-import {useTranslation} from "react-i18next";
 import Link from 'next/link'
 import FacebookIcon from "../assets/js/FacebookIcon";
 import InstagramIcon from "../assets/js/InstagramIcon";
 import LinkedInIcon from "../assets/js/LinkedInIcon";
 
 function Sidebar(props) {
-
-    const {t} = useTranslation();
 
     if (!props.visible) {
         return (<></>)
@@ -37,13 +34,13 @@ function Sidebar(props) {
                                 Connection4Innovation APS
                             </p>
                             <Link href={"/"} className="px-10 hover:text-gray-900 block"
-                                   onClick={() => props.changeVisibility(false)}>{t('header:home')}</Link>
+                                   onClick={() => props.changeVisibility(false)}>Home</Link>
                             <Link href={"/la-nostra-squadra"} className="px-10 hover:text-gray-900 block"
-                                   onClick={() => props.changeVisibility(false)}>{t('header:chisiamo')}</Link>
+                                   onClick={() => props.changeVisibility(false)}>Chi siamo</Link>
                             <Link href={"/progetti"} className="px-10 hover:text-gray-900 block"
-                                   onClick={() => props.changeVisibility(false)}>{t('header:progetti')}</Link>
+                                   onClick={() => props.changeVisibility(false)}>Progetti</Link>
                             <Link href={"/contatti"} className="px-10 hover:text-gray-900 block"
-                                   onClick={() => props.changeVisibility(false)}>{t('header:contattaci')}</Link>
+                                   onClick={() => props.changeVisibility(false)}>Contattaci</Link>
                             <div
                                 className="container w-1/2 mx-auto pt-10 flex justify-around md:w-auto sm:justify-end">
                                 <FacebookIcon link={"https://www.facebook.com/connection4innovation"}/>
