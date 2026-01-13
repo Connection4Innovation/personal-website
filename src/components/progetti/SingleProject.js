@@ -9,7 +9,7 @@ function SingleProject(props) {
     return (
         <section className="text-gray-600 body-font">
             <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-                <div className="md:w-3/6 w-5/6 mb-10 object-cover object-center rounded">
+                <div className="md:w-3/6 w-5/6 mb-10 object-cover object-center rounded-sm">
                     <Image
                         layout={"responsive"}
                         width={4}
@@ -31,7 +31,7 @@ function SingleProject(props) {
                     return (
                         <div className="p-4 lg:w-1/4 md:w-1/2" key={idx}>
                             <a href={part.link} target={"_blank"}>
-                                <div className="flex-shrink-0 rounded-lg w-full h-56 object-contain object-center mb-4">
+                                <div className="shrink-0 rounded-lg w-full h-56 object-contain object-center mb-4">
                                     <Image
                                         layout={"responsive"}
                                         width={4}

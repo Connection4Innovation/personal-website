@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import {Helmet} from "react-helmet"
+import Head from "next/head"
 import {useRouter} from "next/router";
 
 const SEO = ({title, description, image, article}) => {
@@ -17,20 +17,21 @@ const SEO = ({title, description, image, article}) => {
         twitterUsername = "";
 
     const seo = {
-        title: title || defaultTitle,
+        title: title ? `${title} - Connection4Innovation APS` : defaultTitle,
         description: description || defaultDescription,
         image: `${siteUrl}${image || defaultImage}`,
         url: `${siteUrl}${pathname}`,
     }
 
     return (
-        <Helmet title={seo.title} titleTemplate={titleTemplate}>
+        <Head>
+            <title>{seo.title}</title>
             <meta name="description" content={seo.description}/>
             <meta name="image" content={seo.image}/>
 
             {seo.url && <meta property="og:url" content={seo.url}/>}
 
-            {(article ? true : null) && <meta property="og:type" content="article"/>}
+            {article && <meta property="og:type" content="article"/>}
 
             {seo.title && <meta property="og:title" content={seo.title}/>}
 
@@ -53,7 +54,7 @@ const SEO = ({title, description, image, article}) => {
             )}
 
             {seo.image && <meta name="twitter:image" content={seo.image}/>}
-        </Helmet>
+        </Head>
     )
 }
 

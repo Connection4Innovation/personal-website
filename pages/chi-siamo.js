@@ -25,3 +25,9 @@ function ChiSiamo() {
 }
 
 export default ChiSiamo;
+
+export async function getServerSideProps() {
+    return {
+        props: {},
+    }
+}

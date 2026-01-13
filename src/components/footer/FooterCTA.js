@@ -22,21 +22,21 @@ function FooterCTA() {
                 <label htmlFor="newsletter"
                     className="leading-7 text-sm text-gray-600">{t('footer:newsletter_description')}</label>
                 <input type="email" id="newsletter" name="email"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                    className="w-full bg-gray-100 bg-opacity-50 rounded-sm border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-hidden text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
             </div>
             <span className="h-2 md:hidden" />
             <button
-                className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">{t('footer:newsletter_cta')}
+                className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-hidden hover:bg-indigo-600 rounded-sm">{t('footer:newsletter_cta')}
             </button>
             <span className="h-2 md:hidden" />
             {subscribed && <div className="px-10 inline-flex">
                 {success ?
                     <p
-                        className="flex mx-auto text-white border-0 py-2 px-8 rounded text-md bg-green-500">
+                        className="flex mx-auto text-white border-0 py-2 px-8 rounded-sm text-md bg-green-500">
                         {t('footer:feedback_success')}
                     </p> :
                     <p
-                        className="flex mx-auto text-white border-0 py-2 px-8 rounded text-md bg-red-500">
+                        className="flex mx-auto text-white border-0 py-2 px-8 rounded-sm text-md bg-red-500">
                         {t('footer:feedback_failure')}
                     </p>
                 }

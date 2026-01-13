@@ -60,7 +60,7 @@ function Timeline() {
     }];
 
     return (
-        <VerticalTimeline classname="mx-6">
+        <VerticalTimeline className="mx-6">
             {timelineEvents.reverse().map((item, idx) => {
 
                 const alpha = 1 - (1 / (timelineEvents).length * (idx + 1));
@@ -84,7 +84,7 @@ function Timeline() {
                                 return (
                                     <Link href={bt.link} key={btIdx}>
                                         <button
-                                            className='inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-md'
+                                            className='inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-hidden hover:bg-indigo-600 rounded-sm text-md'
                                         >
                                             {bt.text}
                                         </button>

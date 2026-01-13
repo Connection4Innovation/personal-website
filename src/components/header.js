@@ -18,16 +18,16 @@ function Header(props) {
                 {isBreakpoint && <Link href={"/"}><Logo/></Link>}
                 {!isBreakpoint && <Logo onClick={() => !isBreakpoint && setSidebarVisible(!sidebarVisible)}/>}
                 <nav className="hidden lg:flex md:ml-auto flex flex-wrap items-center text-base justify-center">
-                    <Link href={"/chi-siamo"}>
-                        <a className="mr-5 hover:text-gray-900">{t('header:chisiamo')}</a>
+                    <Link href={"/chi-siamo"} className="mr-5 hover:text-gray-900">
+                        {t('header:chisiamo')}
                     </Link>
-                    <Link href={"/progetti"}>
-                        <a className="mr-5 hover:text-gray-900">{t('header:progetti')}</a>
+                    <Link href={"/progetti"} className="mr-5 hover:text-gray-900">
+                        {t('header:progetti')}
                     </Link>
                 </nav>
                 <Link href={"/contatti"}>
                     <button
-                        className="hidden lg:flex inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">{t('header:contattaci')}
+                        className="hidden lg:flex inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-hidden hover:bg-gray-200 rounded-sm text-base mt-4 md:mt-0">{t('header:contattaci')}
                         <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
                              strokeWidth="2"
                              className="w-4 h-4 ml-1" viewBox="0 0 24 24">
@@ -51,13 +51,14 @@ function Header(props) {
                     </span>
                         <p className="ml-3 font-medium text-white">{t('progetti:siamo_in_finale')}</p>
                     </div>
-                    <div className="order-3 mt-2 flex-shrink-0 w-full sm:mt-0 sm:w-auto">
-                        <Link href="https://www.meet-and-code.org/it/it/news-show/458">
-                            <a
-                                className="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-indigo-600 bg-white hover:bg-indigo-50">
-                                {t('progetti:guarda_la_news')}
-                            </a>
-                        </Link>
+                    <div className="order-3 mt-2 shrink-0 w-full sm:mt-0 sm:w-auto">
+                        <a
+                            href="https://www.meet-and-code.org/it/it/news-show/458"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-xs text-sm font-medium text-indigo-600 bg-white hover:bg-indigo-50">
+                            {t('progetti:guarda_la_news')}
+                        </a>
                     </div>
                 </div>
             }

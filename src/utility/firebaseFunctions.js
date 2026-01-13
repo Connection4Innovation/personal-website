@@ -1,6 +1,6 @@
 import {addDoc, collection} from "@firebase/firestore";
 import {db} from "./firebaseInit";
-import publicIp from "public-ip";
+import {publicIpv4} from "public-ip";
 
 export const sendMail = async (to, subject, content) => {
     try {
@@ -20,7 +20,7 @@ export const sendMail = async (to, subject, content) => {
 
 export const subscribeNewsletter = async (ip, email, language) => {
 
-    const getClientIp = async () => publicIp.v4({
+    const getClientIp = async () => publicIpv4({
         fallbackUrls: ["https://ifconfig.co/ip"]
     });
 

@@ -15,7 +15,7 @@ function ChiSiamoWrapper() {
             <div className="flex justify-center">
                 <Link href={"/la-nostra-squadra"}>
                     <button
-                        className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">{t("chisiamo:scopri_team")}
+                        className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-hidden hover:bg-indigo-600 rounded-sm text-lg">{t("chisiamo:scopri_team")}
                     </button>
                 </Link>
             </div>
