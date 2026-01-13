@@ -13,16 +13,7 @@ function FooterCredits() {
         <div className="bg-gray-100">
             <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
                 <p className="text-gray-500 text-sm text-center sm:text-left">
-                    © {getYear()} Connection4Innovation APS <span className="h-1 block md:hidden" />
-                    created by
-                    <a
-                        href="http://anrighi.dev"
-                        className="text-gray-600 ml-1"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        andrea righi
-                    </a>
+                    © {getYear()} Connection4Innovation APS
                 </p>
                 <div
                     className="container w-1/2 mx-auto pt-3 flex justify-around md:w-auto lg:w-1/6 md:py-0 sm:justify-end">
