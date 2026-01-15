@@ -28,6 +28,9 @@ jobs:
         env:
           NODE_ENV: production
 
+      - name: Remove cache directory before deployment
+        run: rm -rf .next/cache
+
       - name: Create Cloudflare Pages project (if it doesn't exist)
         uses: cloudflare/wrangler-action@v3
         continue-on-error: true
