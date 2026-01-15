@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --webpack",
     "build": "next build --webpack",
-    "build:cf": "next build --webpack && npx @opennextjs/cloudflare",
+    "build:cf": "next build --webpack && npx @opennextjs/cloudflare build",
     "start": "next start"
   },
   "dependencies": {
@@ -24,10 +24,10 @@
     "react-dom": "^19.0.0",
     "react-responsive": "^9.0.2",
     "react-vertical-timeline-component": "^3.3.3",
-    "sharp": "^0.32.6",
     "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.14.8",
     "eslint": "^9.0.0",
     "eslint-config-next": "^16.1.1"
   },
