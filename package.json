@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev --webpack",
     "build": "next build --webpack",
+    "build:cf": "next build --webpack && npx @cloudflare/next-on-pages",
     "start": "next start"
   },
   "dependencies": {
